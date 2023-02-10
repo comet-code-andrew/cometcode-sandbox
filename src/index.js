@@ -4,10 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { Canvas } from '@react-three/fiber'
+import Experience from "./Experience";
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <>
+      <Canvas>
+        <Experience/>
+      </Canvas>
+      Soon to be a badass app using visual 3d models by REINDHARTZ and Shamonabona
+
+    </>
   </React.StrictMode>
 );
 
